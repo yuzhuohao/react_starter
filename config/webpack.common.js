@@ -1,4 +1,5 @@
 //  config/webpack.config.base.js
+const packageName = require('../package.json').name;
 const path = require("path");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -9,11 +10,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
 	entry: {
 		//项目入口
-		app: "./src/index.tsx",
+		app: "./src/Index.tsx",
 	},
 	output: {
-		path: path.resolve(__dirname, "../dist"),
-		filename: "[name].[hash].js",
+		path: path.resolve(__dirname, '../dist'),
+		publicPath: '/',
+		filename: 'assets/js/[name].[hash].js',
 	},
 	resolve: {
 		extensions: [".ts", ".tsx", ".js", ".jsx"],
@@ -28,7 +30,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: "react app",
+			title: "react-qiankun-main",
 			template: path.resolve(__dirname, "../index.html"),
 			filename: "index.html",
 		}),

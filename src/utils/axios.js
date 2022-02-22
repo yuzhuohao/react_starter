@@ -1,6 +1,5 @@
-import axios from "axios";
-import Router from "../router";
-import message from "ant-design-vue/es/message";
+import axios from 'axios';
+import { message } from 'antd';
 
 axios.defaults.timeout = 36000000; //设置超时时间
 
@@ -21,7 +20,9 @@ axios.defaults.timeout = 36000000; //设置超时时间
 
 //响应拦截器
 axios.interceptors.response.use(
-	(response) => {},
+	(response) => {
+		return response;
+	},
 	(error) => {
 		if (error.code === 401) {
 		} else if (error.data.code !== 200) {

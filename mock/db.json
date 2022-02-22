@@ -1,24 +1,27 @@
 {
-    "repairStorageRecordDetail": {
-        "currentPageNum": 0,
-        "errorCode": "",
-        "errorMsg": "",
-        "pageCount": 0,
-        "pageSize": 0,
-        "success": true,
-        "totalNum": 10,
-        "voList": [
+    "menus": {
+        "data": [
             {
-                "col1": 1231243,
-                "col2": 2,
-                "col3": 16,
-                "col4": 98
+                "title": "主页",
+                "key": "dashboard",
+                "path": "/dashboard"
             },
             {
-                "col1": 1231243,
-                "col2": 3,
-                "col3": 16,
-                "col4": 98
+                "title": "系统管理",
+                "key": "system",
+                "path": "/system",
+                "children": [
+                    {
+                        "title": "用户管理",
+                        "key": "user_manage",
+                        "path": "/userManage"
+                    },
+                    {
+                        "title": "权限管理",
+                        "key": "permission_manage",
+                        "path": "/permission"
+                    }
+                ]
             }
         ]
     }

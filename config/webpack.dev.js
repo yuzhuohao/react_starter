@@ -9,20 +9,22 @@ const proxy = require('./proxy.js');
  * @type {import('webpack').WebpackOptionsNormalized}
  */
 const devServer = {
-	port: 3000,
-	host: "localhost",
-	contentBase: path.join(__dirname, "../public"),
+	port: 7001,
+	host: 'localhost',
+	contentBase: path.join(__dirname, '../public'),
 	watchContentBase: true,
-	publicPath: "/",
+	publicPath: '/',
 	open: true,
+	hot: true,
 	compress: true,
 	historyApiFallback: true,
 	hot: true,
-	clientLogLevel: "error",
-	watchOptions: {
-		ignored: /node_modules/,
-	},
+	clientLogLevel: 'error',
 	proxy: proxy,
+	liveReload: false,
+	headers: {
+		'Access-Control-Allow-Origin': '*',
+	},
 };
 
 const devConfig = {
