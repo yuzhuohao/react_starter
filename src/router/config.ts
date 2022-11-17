@@ -1,6 +1,8 @@
 import Index from '@/layout/Index';
 import Dashboard from '@/pages/dashboard/Index';
 import UserManage from '@/pages/system/userManage/Index';
+import PermissionManage from '@/pages/system/permissionManage/Index';
+
 import { RouteConfig } from '@/types/common';
 
 export const routes: RouteConfig[] = [
@@ -18,7 +20,7 @@ export const routes: RouteConfig[] = [
 			},
 			{
 				path: '/permissionManage',
-				component: UserManage,
+				component: PermissionManage,
 			},
 		],
 	},

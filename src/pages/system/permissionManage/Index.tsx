@@ -1,13 +1,12 @@
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
 import './Index.less';
 
-const UserManage: React.FC = () => {
+const PermissionManage: React.FC = () => {
 	return (
 		<div className="dashborad">
-			<FormattedMessage id="sender" />
+			权限管理
 		</div>
 	);
 };
 
-export default UserManage;
+export default PermissionManage;

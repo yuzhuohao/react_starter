@@ -19,7 +19,7 @@
                     {
                         "title": "权限管理",
                         "key": "permission_manage",
-                        "path": "/permission"
+                        "path": "/permissionManage"
                     }
                 ]
             }
