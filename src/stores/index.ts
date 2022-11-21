@@ -1,4 +1,4 @@
-import { createStore, applyMiddleware } from 'redux';
+import { configureStore } from '@reduxjs/toolkit'
 import { combineReducers } from 'redux';
 import intlState from './reducers/intl';
 import menuState from './reducers/menu';
@@ -8,5 +8,10 @@ const reducer = combineReducers({
 	intlState,
 	menuState,
 });
-const store = createStore(reducer, applyMiddleware(thunkMiddleware));
+const store = configureStore({
+	reducer: reducer,
+	middleware: getDefaultMiddleware =>
+	  getDefaultMiddleware()
+	  .prepend(thunkMiddleware)
+  })
 export default store;

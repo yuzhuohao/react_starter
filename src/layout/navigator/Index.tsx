@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Select, Button } from 'antd';
 import { changeDirection, changeLanguage } from '@/stores/actions/language';
-import { getWeather } from '@/stores/actions/menus';
+import { getMenus } from '@/stores/actions/menus';
 import { useEffect } from 'react';
 
 const { Option } = Select;
@@ -12,7 +12,7 @@ const TopNavigator: React.FC = () => {
 	const dispatch = useDispatch();
 
 	useEffect(() => {
-		dispatch(getWeather());
+		dispatch(getMenus());
 	}, []);
 
 	const { language, languageList, direction } = intlState;

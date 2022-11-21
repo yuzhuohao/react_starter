@@ -10,7 +10,7 @@ export interface MenuAction {
 	deleteKey?: string;
 }
 
-export const getWeather = () => {
+export const getMenus = () => {
 	return (dispatch: Function) => {
 		axios
 			.get('/mock/menus')

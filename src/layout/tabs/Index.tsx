@@ -5,6 +5,7 @@ import { Tabs } from 'antd';
 import { TabProps, PageProps } from '@/types/common';
 import { changeActive, closeTab } from '@/stores/actions/menus';
 import store from '@/stores';
+
 const { TabPane } = Tabs;
 
 const TopTabs: React.FC<PageProps> = (props) => {

@@ -10,18 +10,7 @@ const defaultState: MenuState = {
 			closable: false,
 		},
 	],
-	menus: [
-		// {
-		// 	title: 'react子应用user',
-		// 	key: 'react_user',
-		// 	path: '/react-ts-qiankun-app/user',
-		// },
-		// {
-		// 	title: 'react子应用article',
-		// 	key: 'react_article',
-		// 	path: '/react-ts-qiankun-app/article',
-		// },
-	],
+	menus: [],
 	activeKey: 'dashboard',
 	activePath: '/dashboard',
 };
