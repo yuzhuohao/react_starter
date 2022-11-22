@@ -1,5 +1,5 @@
 {
-  "name": "react-qiankun-micro",
+  "name": "react_starter",
   "version": "1.0.0",
   "description": "ts版本的react框架",
   "main": "index.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yuzhuohao/react-qiankun-main.git"
+    "url": "https://github.com/yuzhuohao/react_starter.git"
   },
   "author": "虞卓浩",
   "license": "ISC",

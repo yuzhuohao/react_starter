@@ -2,7 +2,7 @@
     "menus": {
         "data": [
             {
-                "title": "主页",
+                "title": "控制台",
                 "key": "dashboard",
                 "path": "/dashboard"
             },

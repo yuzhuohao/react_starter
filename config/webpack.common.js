@@ -30,7 +30,7 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: "react-qiankun-main",
+			title: "react-starter",
 			template: path.resolve(__dirname, "../index.html"),
 			filename: "index.html",
 		}),
